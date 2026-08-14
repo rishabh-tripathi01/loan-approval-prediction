@@ -22,7 +22,8 @@ Banks need to quickly assess loan applications. This project builds a model that
 | Random Forest | 75.61% |
 
 **Key Insight:** Both models showed strong performance predicting approvals (recall ~0.94-0.99) but weaker performance predicting rejections (recall ~0.42), indicating class imbalance in the dataset — a common challenge in real-world financial data.
-
+## Confusion Matrix
+![Confusion Matrix](confusion_matrix.png)
 ## Tech Stack
 - Python
 - Pandas, NumPy
