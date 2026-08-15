@@ -1,5 +1,5 @@
 # Loan Approval Prediction
-
+🔗 **Live Demo:** [Try the app here](https://loan-approval-prediction-2pwdnk88ysxw3ps86hbpfk.streamlit.app)
 A machine learning classification project that predicts whether a loan application will be approved based on applicant financial and personal details.
 
 ## Problem Statement
