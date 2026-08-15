@@ -43,3 +43,6 @@ if st.button("Predict"):
         st.success("Loan Approved! ✅")
     else:
         st.error("Loan Rejected ❌")
+st.markdown("---")
+st.markdown("Built by **Rishabh Tripathi** | B.Tech CS (AI & DS)")
+st.markdown("[View on GitHub](https://github.com/rishabh-tripathi01/loan-approval-prediction)")
