@@ -1,7 +1,3 @@
-import streamlit as st
-import pickle
-import numpy as np
-
 # Model load karo
 with open('loan_model.pkl', 'rb') as file:
     model = pickle.load(file)
@@ -15,10 +11,10 @@ married = st.selectbox("Married", ["Yes", "No"])
 dependents = st.selectbox("Dependents", ["0", "1", "2", "3+"])
 education = st.selectbox("Education", ["Graduate", "Not Graduate"])
 self_employed = st.selectbox("Self Employed", ["Yes", "No"])
-applicant_income = st.number_input("Applicant Income", min_value=0, value=5000)
-coapplicant_income = st.number_input("Coapplicant Income", min_value=0, value=0)
-loan_amount = st.number_input("Loan Amount", min_value=0, value=100)
-loan_amount_term = st.number_input("Loan Amount Term (in days)", min_value=0, value=360)
+applicant_income = st.number_input("Applicant Income", min_value=0, value=5000,step=500)
+coapplicant_income = st.number_input("Coapplicant Income", min_value=0, value=0,step=500)
+loan_amount = st.number_input("Loan Amount", min_value=0, value=100,step=10)
+loan_amount_term = st.number_input("Loan Amount Term (in days)", min_value=0, value=360,step=30)
 credit_history = st.selectbox("Credit History", ["1 (Good)", "0 (Bad)"])
 property_area = st.selectbox("Property Area", ["Urban", "Semiurban", "Rural"])
 
