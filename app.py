@@ -1,3 +1,7 @@
+import streamlit as st
+import pickle
+import numpy as np
+
 # Model load karo
 with open('loan_model.pkl', 'rb') as file:
     model = pickle.load(file)
